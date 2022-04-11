@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background: url(bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New tegomin', serif;
+
+}
+
+#board{
+    background: linear-gradient(rgb(160, 216, 165), rgb(164, 164, 201));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(yellow), rgb(60, 255, 0);
+    border: 2px solid black;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: lime;
+    border: .25vmin solid rgb(6, 243, 125);
+    border-radius: 12px;
+}
+
+.food{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
